@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff5f8;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #ff66a3;
+    color: white;
+    padding: 20px;
+}
+
+/* Navbar */
+nav {
+    background: #ffcce0;
+    padding: 10px;
+}
+
+nav a {
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff3399;
+}
+
+/* Hero */
+.hero {
+    background: url('https://via.placeholder.com/1200x300?text=Flower+Bouquet') no-repeat center/cover;
+    color: rgb(243, 7, 7);
+    padding: 80px;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    height: 280px;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Hide checkboxes */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Highlight selected */
+input:checked + label .card {
+    border: 3px solid #ff3399;
+}
+
+/* Bouquet preview */
+.preview {
+    position: relative;
+    height: 250px;
+}
+
+/* Flowers */
+.flower {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.preview {
+    position: relative;
+    height: 250px;
+}
+
+
+/* Positions */
+.rose { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.sunflower { top: 30%; left: 60%; transform: translate(-50%, -50%); }
+.tulip { top: 70%; left: 55%; transform: translate(-50%, -50%); }
+.orchid { top: 40%; left: 40%; transform: translate(-50%, -50%); }
+.lily { top: 60%; left: 45%; transform: translate(-50%, -50%); }
+.hibiscus { top: 75%; left: 50%; transform: translate(-50%, -50%); }
+.lilac { top: 45%; left: 30%; transform: translate(-50%, -50%); }
+.daisy { top: 65%; left: 35%; transform: translate(-50%, -50%); }
+
+/* Show selected flowers */
+#rose:checked ~ .bouquet .rose { opacity: 1; }
+#sunflower:checked ~ .bouquet .sunflower { opacity: 1; }
+#tulip:checked ~ .bouquet .tulip { opacity: 1; }
+#orchid:checked ~ .bouquet .orchid { opacity: 1; }
+#lily:checked ~ .bouquet .lily { opacity: 1; }
+#hibiscus:checked ~ .bouquet .hibiscus { opacity: 1; }
+#lilac:checked ~ .bouquet .lilac { opacity: 1; }
+#daisy:checked ~ .bouquet .daisy { opacity: 1; }
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+input, button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background: #ff3399;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #cc0066;
+}
+
+/* Contact */
+.contact {
+    background: #ffe6f0;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background: #ff66a3;
+    color: white;
+    padding: 10px;
+}
